@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-3032144-LECGAMWXYXSJ8SW1/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+    <header>
+
+        <img class="bg" src="images/bg.png" alt="">
+        <img class="esp" src="images/linea.png" alt="">
+
+        <div class="menu container">
+            <a href="#" class="logo" id="Inicio">Fishing House</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img src="images/menu.png" class="menu-icono" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#Productos">Productos</a></li>
+                    <li><a href="#">Asistente virtual</a></li>
+                    <li><a href="#Socials">Contacto</a></li>
+                </ul>
+        </div>
+
+        <div class="header-content container">
+
+            <div class="header-info">
+                <div class="header-text">
+                    <h1>Fishing house</h1>
+                    <h2>Insumos para pesca</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis neque hic quo, velit ut non
+                        consequuntur nulla, officiis porro rem perferendis cumque ipsam placeat nihil quam impedit
+                        laboriosam? Optio, adipisci.
+                    </p>
+                    <a href="#" class="btn-1">Inicio</a>
+
+                </div>
+                <div class="header-img">
+                    <img src="images/Frontal1.png" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="info container">
+
+        <div class="info-1">
+            <img src="images/time.png" alt="">
+            <h3>Horario</h3>
+            <p>Lunes a viernes 09:00 a 18:00</p>
+        </div>
+
+        <div class="info-1">
+            <img src="images/gps.png" alt="">
+            <h3>Ubicación</h3>
+            <p>Uruguay</p>
+        </div>
+
+        <div class="info-1">
+            <img src="images/phone.png" alt="">
+            <h3>Telefono</h3>
+            <p>9999999</p>
+        </div>
+    </section>
+
+    <section class="nosotros">
+
+        <img class="bg-2" src="images/bg-2.png" alt="">
+
+        <div class="nosotros-info container">
+
+            <div class="nosotros-img">
+                <img src="images/Frontal2.png    " alt="">
+            </div>
+            <div class="nosotros-text">
+                <span></span>
+                <h2>La mejor calidad</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, itaque distinctio. Non
+                    corrupti
+                    inventore adipisci possimus reiciendis. Doloribus blanditiis deleniti quam, animi, obcaecati totam,
+                    ipsam excepturi repellendus reiciendis praesentium aperiam!
+                </p>
+                <a href="#" class="btn-1">Saber mas</a>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="products container" id="Productos">
+
+        <h2>Productos</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus commodi cum quidem rem eaque pariatur,
+            maiores quia libero ab sunt! Totam quidem ad sapiente. Laudantium, unde. Ratione obcaecati itaque quisquam?
+        </p>
+
+        <div class="products-info">
+
+            <div class="product">
+
+                <img src="images/frontal3.png" alt="">
+                <h3>Reel Relix</h3>
+                <p>
+                    Reel frontal RELIX
+                    Modelo Galaxy 8000
+                    Reel grande para Lance o Trolling
+                    Ambi diestro
+                    4 Rodamientos de Bola de Acero Inoxidable
+                    Freno delantero
+                    Carrete metálico
+                    3 + 1 rodamiento de bolas de alta precisión
+                    Infinito sistema inverso de Abti
+                    Smooth Micro Ajustable Click Drag System
+                    Carrete de aluminio fundido largo
+                    Carrete extra de grafito color Negro
+                    Capacidad de carga : 0.35 mm /400 m – 0.40 mm/ 310 m- 0.50 mm / 108
+                </p>
+                <span>$55.00</span>
+            </div>
+
+            <div class="product">
+
+                <img src="images/Frontal1.png" alt="">
+                <h3>Reel</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, autem vero dolorem voluptate
+                    necessitatibus exercitationem dicta natus vel. Voluptatibus ea consequuntur numquam maxime animi
+                    ipsa
+                    nemo dolorum cum, beatae debitis.
+                </p>
+                <span>$35.00</span>
+            </div>
+
+            <div class="product">
+
+                <img src="images/Frontal2.png" alt="">
+                <h3>Reel</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, autem vero dolorem voluptate
+                    necessitatibus exercitationem dicta natus vel. Voluptatibus ea consequuntur numquam maxime animi
+                    ipsa
+                    nemo dolorum cum, beatae debitis.
+                </p>
+                <span>$115.00</span>
+            </div>
+            <div class="product">
+
+                <img src="images/frontal3.png" alt="">
+                <h3>Reel frontal gris
+                </h3>
+                <p>
+                    CARACTERÍSTICAS:
+                    - Capacidad de carga: 120 metros 0.28
+                    - Relación: 4.6 a 1.
+                    - Recuperación por vuelta: 66 cm.
+                    - Rulemanes: 1.
+                    - Freno máximo: 3 kg.
+                    - Peso: 238 gramos.
+
+
+                </p>
+                <span>$25.00</span>
+
+            </div>
+
+            <div class="product">
+
+                <img src="images/frontal4.png" alt="">
+                <h3>Reel shimano galleta</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, autem vero dolorem voluptate
+                    necessitatibus exercitationem dicta natus vel. Voluptatibus ea consequuntur numquam maxime animi
+                    ipsa
+                    nemo dolorum cum, beatae debitis.
+                </p>
+                <span>$300.00</span>
+            </div>
+
+            <div class="product">
+
+                <img src="images/Frontal1.png" alt="">
+                <h3>Reel</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, autem vero dolorem voluptate
+                    necessitatibus exercitationem dicta natus vel. Voluptatibus ea consequuntur numquam maxime animi
+                    ipsa
+                    nemo dolorum cum, beatae debitis.
+                </p>
+                <span>$90.00</span>
+            </div>
+
+        </div>
+
+    </main>
+    <hr>
+    <footer class="footer container">
+
+        <div class="footer-links">
+
+            <div class="link">
+
+                <h3>Fishing House</h3>
+                <div class="socials" id="Socials">
+                    <img src="images/s1.svg" alt="">
+                    <img src="images/s2.svg" alt="">
+                    <img src="images/s3.svg" alt="">
+                    <img src="images/s4.svg" alt="">
+                </div>
+
+            </div>
+
+            <div class="link">
+
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+
+            </div>
+
+            <div class="link">
+
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+
+            </div>
+
+            <div class="link">
+
+                <h3>Lorem</h3>
+                <ul>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                    <li><a href="#">Lorem ipsum</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
